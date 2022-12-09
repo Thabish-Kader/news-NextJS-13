@@ -1,6 +1,7 @@
 import { HiBars3 } from "react-icons/hi2";
-import { Categories } from "./Categories";
-import { categories } from "../newsCategories";
+import { CategoriesLink } from "./CategoriesLink";
+import { SearchNews } from "./SearchNews";
+
 export const Header = () => {
 	return (
 		<header>
@@ -19,11 +20,9 @@ export const Header = () => {
 				</button>
 			</div>
 			{/* links */}
-			<div className="max-w-6xl mx-auto flex items-center justify-between">
-				{categories.map((category, i) => (
-					<Categories key={i} category={category} />
-				))}
-			</div>
+			<CategoriesLink />
+			{/* Search component */}
+			<SearchNews />
 		</header>
 	);
 };
