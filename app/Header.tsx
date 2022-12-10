@@ -1,5 +1,6 @@
 import { HiBars3 } from "react-icons/hi2";
 import { CategoriesLink } from "./CategoriesLink";
+import { DarkModeBtn } from "./DarkModeBtn";
 import { SearchNews } from "./SearchNews";
 
 export const Header = () => {
@@ -15,9 +16,12 @@ export const Header = () => {
 					News
 				</h1>
 
-				<button className="bg-zinc-900 p-2 lg:text-xl lg:p-4 rounded-full text-white">
-					Subscribe
-				</button>
+				<div className="flex items-center space-x-2">
+					<DarkModeBtn />
+					<button className="bg-zinc-900 dark:bg-black p-2 lg:text-xl lg:p-4 rounded-full text-white">
+						Subscribe
+					</button>
+				</div>
 			</div>
 			{/* links */}
 			<CategoriesLink />
