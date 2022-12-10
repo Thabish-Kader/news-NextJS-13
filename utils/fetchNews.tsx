@@ -1,7 +1,8 @@
 import { gql } from "graphql-request";
+import { sortNews } from "./sortNews";
 
 export const fetchNews = async (
-	categories: string,
+	categories?: string,
 	isDynamic?: boolean,
 	searchKeyWord?: string
 ) => {
@@ -32,7 +33,7 @@ export const fetchNews = async (
 			}
 		}
 	`;
-
+	//caling stepzen to fetch data
 	const response = await fetch(
 		"https://guaimaro.stepzen.net/api/orderly-armadillo/__graphql",
 		{
@@ -57,6 +58,7 @@ export const fetchNews = async (
 	);
 	console.log("Data retrieval succcessful for >>>>> " + categories);
 	const news = await response.json();
-	console.log(news.data.myQuery);
-	return news.data.myQuery;
+	const sortedNews = sortNews(news.data.myQuery);
+
+	return sortedNews;
 };

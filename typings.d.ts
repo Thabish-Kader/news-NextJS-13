@@ -8,12 +8,12 @@ type Categories =
 	| "technology";
 
 type NewsArticles = {
-	author: string;
+	author: string | null;
 	title: string;
 	description: string;
 	url: string;
 	source: string;
-	image: null;
+	image: string | null;
 	category: string;
 	language: string;
 	country: string;
@@ -25,4 +25,9 @@ type Pagination = {
 	offset: number;
 	count: number;
 	total: number;
+};
+
+type NewsResponse = {
+	data: NewsArticles[];
+	pagination: Pagination;
 };

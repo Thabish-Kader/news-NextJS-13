@@ -1,15 +1,20 @@
 import React from "react";
 import { categories } from "../newsCategories";
 import { fetchNews } from "../utils/fetchNews";
+import news from "../newsData.json";
+import { Headlines } from "./Headlines";
 export default async function HomePage() {
 	const newsCategory = categories.join(",");
-	console.log(newsCategory);
+
 	// fetch data
-	// const newsResponse = await fetchNews(newsCategory);
+	// const newsResponse : NewsResponse = await fetchNews(newsCategory) || newsResponseData;
 	// sort the data
 
-	// console.log(newsResponse);
 	// get the new data
 
-	return <div className="text-red-500">Page</div>;
+	return (
+		<div>
+			<Headlines news={news} />
+		</div>
+	);
 }
