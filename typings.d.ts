@@ -1,6 +1,6 @@
 type Categories =
 	| "general"
-	| "buisness"
+	| "business"
 	| "entertainment"
 	| "health"
 	| "science"
