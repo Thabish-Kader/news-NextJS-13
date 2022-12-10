@@ -22,6 +22,6 @@ type Root {
 }
 
 type Query {
-  myQuery(access_key: String, sources: String): Root
+  myQuery(access_key: String, countries: String, sources: String): Root
     @rest(endpoint: "http://api.mediastack.com/v1/news")
 }
