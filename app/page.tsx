@@ -7,6 +7,7 @@ export default async function HomePage() {
 	// fetch data
 	// const newsResponse = await fetchNews(newsCategory);
 	// sort the data
+
 	// console.log(newsResponse);
 	// get the new data
 
