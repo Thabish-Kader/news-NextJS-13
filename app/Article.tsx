@@ -1,4 +1,5 @@
 import React from "react";
+import ReadMoreButton from "./ReadMoreButton";
 
 type Props = {
 	article: NewsArticles;
@@ -29,6 +30,7 @@ export const Article = ({ article }: Props) => {
 				<p>{article.source}</p>
 				<p>{article.published_at}</p>
 			</div>
+			<ReadMoreButton />
 		</article>
 	);
 };
