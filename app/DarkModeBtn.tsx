@@ -28,7 +28,7 @@ export const DarkModeBtn = () => {
 				/>
 			) : (
 				<BsFillMoonFill
-					className="h-8 w-8 cursor-pointer text-white"
+					className="h-8 w-8 cursor-pointer text-black"
 					onClick={() => setTheme("dark")}
 				/>
 			)}

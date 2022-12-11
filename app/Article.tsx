@@ -6,7 +6,7 @@ type Props = {
 
 export const Article = ({ article }: Props) => {
 	return (
-		<article className="flex flex-col p-4  bg-slate-100 dark:bg-zinc-800 hover:scale-110 shadow-sm hover:shadow-lg hover:bg-slate-300 transition duration-300 ease-out ">
+		<article className="flex flex-col p-4  bg-slate-200 dark:bg-zinc-800 hover:scale-110 shadow-sm hover:shadow-lg hover:bg-slate-300 transition duration-300 ease-out ">
 			{/* image */}
 			{article.image && (
 				<div>
