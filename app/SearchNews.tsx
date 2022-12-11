@@ -22,11 +22,11 @@ export const SearchNews = () => {
 				onChange={(e) => setInput(e.target.value)}
 				type="text"
 				placeholder="Search...."
-				className="flex-1 w-full bg-transparent text-red-500 outline-none"
+				className="flex-1 w-full bg-slate-200 p-2 rounded-lg text-red-500 outline-none dark:bg-black"
 			/>
 			<button
 				disabled={!input}
-				className="text-red-500 disabled:text-gray-500"
+				className="text-red-500 bg-slate-200 dark:bg-black p-3 rounded-full disabled:text-gray-500"
 			>
 				Search
 			</button>
