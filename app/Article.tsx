@@ -30,7 +30,7 @@ export const Article = ({ article }: Props) => {
 				<p>{article.source}</p>
 				<p>{article.published_at}</p>
 			</div>
-			<ReadMoreButton />
+			<ReadMoreButton article={article} />
 		</article>
 	);
 };

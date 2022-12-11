@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { HiBars3 } from "react-icons/hi2";
 import { CategoriesLink } from "./CategoriesLink";
 import { DarkModeBtn } from "./DarkModeBtn";
@@ -11,9 +12,13 @@ export const Header = () => {
 				<HiBars3 className="h-10 w-10 lg:h-12 lg:w-12" />
 
 				<h1 className="text-4xl lg:text-6xl">
-					My{" "}
-					<span className="underline decoration-red-500">Times</span>{" "}
-					News
+					<Link href="/">
+						My{" "}
+						<span className="underline decoration-red-500">
+							Times
+						</span>{" "}
+						News
+					</Link>
 				</h1>
 
 				<div className="flex items-center space-x-2">

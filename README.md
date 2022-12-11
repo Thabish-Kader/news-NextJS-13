@@ -7,3 +7,4 @@
 ### Resources
 
 -   [querying data with varibles useing stepzen](https://stepzen.com/blog/consume-graphql-in-javascript)
+-   [Acessing parmas from server in next 13](https://beta.nextjs.org/docs/api-reference/use-search-params)
