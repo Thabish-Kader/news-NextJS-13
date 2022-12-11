@@ -56,7 +56,7 @@ export const fetchNews = async (
 			}),
 		}
 	);
-	console.log("Data retrieval succcessful for >>>>> " + categories);
+	// console.log("Data retrieval succcessful for >>>>> " + categories);
 	const news = await response.json();
 	const sortedNews = sortNews(news.data.myQuery);
 

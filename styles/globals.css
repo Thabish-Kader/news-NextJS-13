@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+	.title {
+		@apply text-2xl p-4 underline capitalize decoration-red-500 underline-offset-8 decoration-double decoration-2;
+	}
+}
