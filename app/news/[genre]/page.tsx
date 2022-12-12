@@ -9,7 +9,7 @@ type Props = {
 };
 
 const GenrePage = async ({ params: { genre } }: Props) => {
-	const news: NewsResponse = newsJson || (await fetchNews(genre));
+	const news: NewsResponse = (await fetchNews(genre)) || newsJson;
 
 	return (
 		<div>

@@ -9,8 +9,9 @@ type Props = {
 
 const SearchArticle = async ({ searchParams }: Props) => {
 	const news: NewsResponse =
-		newsJson || (await fetchNews("general", true, searchParams?.term));
+		(await fetchNews("general", true, searchParams?.term)) || newsJson;
 	// console.log(news);
+	// console.log(searchParams);
 	return (
 		<div>
 			<h1 className="title">Results for {searchParams?.term}</h1>

@@ -8,7 +8,7 @@ export default async function HomePage() {
 	const newsCategory = categories.join(",");
 
 	// fetch data
-	const news: NewsResponse = newsJson || (await fetchNews(newsCategory));
+	const news: NewsResponse = (await fetchNews(newsCategory)) || newsJson;
 
 	return (
 		<div>
