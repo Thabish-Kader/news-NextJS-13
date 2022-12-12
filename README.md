@@ -12,3 +12,7 @@ As i was building this application i realized that next 13 forces the developer 
 
 -   [querying data with varibles useing stepzen](https://stepzen.com/blog/consume-graphql-in-javascript)
 -   [Acessing parmas from server in next 13](https://beta.nextjs.org/docs/api-reference/use-search-params)
+
+### Bugs
+
+This application work fine in local environment but in production the search and read more feaures dont work as expected. I am assuming this is because Next JS 13 is still in beta. Therefore there are still some bugs in it.
