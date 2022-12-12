@@ -4,16 +4,16 @@ import { fetchNews } from "../../utils/fetchNews";
 import { Headlines } from "../Headlines";
 
 type Props = {
-	searchParams: { term: string };
+	searchParams?: { term: string };
 };
 
 const SearchArticle = async ({ searchParams }: Props) => {
 	const news: NewsResponse =
-		newsJson || (await fetchNews("general", true, searchParams.term));
+		newsJson || (await fetchNews("general", true, searchParams?.term));
 	// console.log(news);
 	return (
 		<div>
-			<h1 className="title">Results for {searchParams.term}</h1>
+			<h1 className="title">Results for {searchParams?.term}</h1>
 
 			<Headlines news={news} />
 		</div>

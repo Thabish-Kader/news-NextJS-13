@@ -3,6 +3,7 @@ import { categories } from "../newsCategories";
 import { fetchNews } from "../utils/fetchNews";
 import newsJson from "../newsData.json";
 import { Headlines } from "./Headlines";
+
 export default async function HomePage() {
 	const newsCategory = categories.join(",");
 
