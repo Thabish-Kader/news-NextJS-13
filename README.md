@@ -16,3 +16,7 @@ As i was building this application i realized that next 13 forces the developer 
 ### Bugs
 
 This application work fine in local environment but in production the search and read more feaures dont work as expected. I am assuming this is because Next JS 13 is still in beta. Therefore there are still some bugs in it.
+
+### Note
+
+As this application uses an external api "mediastack api" the amount of request is limited to 500 after this i have programmed it in such a way that after the request reaches 500 the newsData.json present locally will be used.
